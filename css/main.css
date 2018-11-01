@@ -20,11 +20,7 @@ body{
 	height: 100vh;
 }
 .container{
-    background-image: url(../img/4.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    -o-background-size: cover;
-       background-size: cover;
+    background-color: #fff;
 }
 nav{ 
 	background-image: -webkit-gradient(linear, left top, right top, from(#3f51b5), color-stop(#03a9f4), color-stop(#83d8ff), to(#f8f9fe)); 
