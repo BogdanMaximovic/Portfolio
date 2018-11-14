@@ -83,7 +83,7 @@ a:active{
 	color: transparent;
 	letter-spacing: 1px;
 }
-.heading-secondary {
+.coloring-text {
 	background-image: -webkit-gradient(linear,left top, right top,from(#3f51b5), to(#83d8ff));
 	background-image: -moz-linear-gradient(left,#3f51b5, #83d8ff);
 	background-image: -o-linear-gradient(left,#3f51b5, #83d8ff);
