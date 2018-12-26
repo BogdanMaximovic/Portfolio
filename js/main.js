@@ -5,4 +5,5 @@ $(document).ready(function() {
         }, 1200);
         return false;
     });
+	AOS.init();
 });
