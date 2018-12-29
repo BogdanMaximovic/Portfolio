@@ -5,5 +5,7 @@ $(document).ready(function() {
         }, 1200);
         return false;
     });
+  $('.title').text(document.title);
+  $('.project-window').attr('data-aos-duration', '1500');
 	AOS.init();
 });
