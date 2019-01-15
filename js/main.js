@@ -6,6 +6,6 @@ $(document).ready(function() {
         return false;
     });
   $('.title').text(document.title);
-  $('.project-window').attr('data-aos-duration', '1500');
+  $('.project-window').attr('data-aos-duration', '1200');
 	AOS.init();
 });
