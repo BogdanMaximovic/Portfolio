@@ -18,7 +18,7 @@ body {
     font-size: 100%;
     font-family: inherit;
     font-family: 'Karla', sans-serif;
-    background-image: url('/img/code.png');
+    background-image: url('../img/code.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
