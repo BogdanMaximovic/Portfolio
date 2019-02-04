@@ -237,7 +237,6 @@ h1 {
 
 main {
     background: #f1f1f1;
-    padding: 5rem 0 3rem 0;
     -webkit-box-shadow: var(--shadow);
     box-shadow: var(--shadow);
 }
