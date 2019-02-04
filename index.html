@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="Author: Bogdan Maksimovic, 
     Portfolio, Junior Frontend Web Developer">
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/logo/favicon-32x32.png">
@@ -27,55 +25,45 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <!-- my script -->
     <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
-
     <title>Bogdan Maksimović</title>
 </head>
 
 <body>
-    <div class="container rounded">
-        <nav class="navbar navbar-expand-sm sticky-top navbar-light mb-3 rounded" id="main-nav">
-            <button class="navbar-toggler" name="button-toogle" data-toggle="collapse" data-target="#navbarNav" aria-labelledby="fileMenu" aria-label="Hamburger menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav h6 mx-auto">
-                    <li class="nav-item border m-1 rounded">
-                        <a class="nav-link text-white ml-1" href="#about">About</a>
-                    </li>
-                    <li class="nav-item border m-1 rounded">
-                        <a class="nav-link text-white ml-1" href="#skill">Skills</a>
-                    </li>
-                    <li class="nav-item border m-1 rounded">
-                        <a class="nav-link text-white ml-1" href="#exp">Experience</a>
-                    </li>
-                    <li class="nav-item border m-1 rounded">
-                        <a class="nav-link text-white ml-1" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item border m-1 rounded">
-                        <a class="nav-link text-white ml-1" href="#projects">Work</a>
-                    </li>
-                    <li class="nav-item border m-1 rounded">
-                        <a class="nav-link text-white ml-1" href="#contact">Contact</a>
-                    </li>
-                </ul>
+    <div class="container">
+        <nav class="navbar sticky-top text-center wrapper pt-5" id="nav">
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu" id="main-nav">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </nav>
         <main class="row">
-            <section class="col-sm-10 offset-sm-1 m-auto py-5" id="about">
-                <div class="text-center animated">
-                    <h1 class="coloring-text title">Bogdan Maksimović</h1>
+            <section class="col-sm-12 m-auto" id="about">
+                <div class="text-center animated mx-5">
+                    <h1 class="coloring-text pb-3">Bogdan Maksimović</h1>
                     <h3 class="coloring-text pb-3">Frontend Web Developer</h3>
-                    <img src="img/author/me.jpeg" class="border border-primary author img" alt="author"> 
-                    <p class="h4 font-italic mt-3 text-left">Hi, my name is Bogdan, and I'm <span class="coloring-text"> FrontEnd web developer.</span> Every day, I'm looking for ways to improve my knowledge in order to write a clean and sustainable code. My motto is: Choose the job you love, and you will not have to work even the only day in your life. I am motivated, I want to learn and improve my knowledge as well as to apply the existing ones that I have gained so far at the IT academy and self-study through Udemy online courses. My next goals are master Javascript ES6 and ReactJS.</p>
+                    <img src="img/author/me.jpeg" class="border border-primary author img" alt="author">
+                    <span class="font-italic mt-3 text-left" id="information">Hi, my name is Bogdan, and I'm <span class="coloring-text"> Frontend web developer.</span> Every day, I'm looking for ways to improve my knowledge in order to write a clean and sustainable code. My motto is: Choose the job you love, and you will not have to work even the only day in your life. I am motivated, I want to learn and improve my knowledge as well as to apply the existing ones that I have gained so far at the IT academy and self-study through Udemy online courses. My next goals are master Javascript ES6 and ReactJS.</span>
                 </div>
             </section>
-            <section class="col-sm-10 offset-sm-1 m-auto py-4" id="info">
+            <section class="col-md-10 offset-md-1 col-sm-12 m-auto py-3" id="info">
                 <h2 class="border-bottom border-primary coloring-text text-center">Information</h2>
                 <div class="col pt-3">
                     <svg class="info-icon info-icon-male">
                         <use xlink:href="css/svg/sprite.svg#icon-man"></use>
                     </svg>
-                    <span class="h5 title">Bogdan Maksimović</span>
+                    <span class="h5">Bogdan Maksimović</span>
                 </div>
                 <div class="col">
                     <svg class="info-icon info-icon-home">
@@ -84,8 +72,14 @@
                     <span class="h5">Beograd, SRBIJA</span>
                 </div>
                 <div class="col">
-                    <svg class="info-icon info-icon-mail">
-                        <use xlink:href="css/svg/sprite.svg#icon-mail2"></use>
+                    <svg class="info-icon icon-library">
+                        <use xlink:href="css/svg/sprite.svg#icon-library"></use>
+                    </svg>
+                    <span class="h5">IT Academy - 2017/2018</span>
+                </div>
+                <div class="col">
+                    <svg class="info-icon info-icon-envelop">
+                        <use xlink:href="css/svg/sprite.svg#icon-envelop"></use>
                     </svg>
                     <span class="h5">
                         <a href="mailto:bogdanmaksimovic91@gmail.com" class="text-dark">bogdanmaksimovic91@gmail.com</a>
@@ -113,151 +107,110 @@
                     </div>
                 </div>
             </section>
-            <section class="py-4" id="skill">
-                <div class="col-sm-10 offset-sm-1 pb-3">
-                    <h2 class="border-bottom border-primary coloring-text mb-5 text-center">My Skills</h2>
-                    <div class="row pb-3">
-                        <div class="col-sm-4 text-center py-2">
-                            <img src="img/icon/html5.png" class="m-auto pb-1 img logo" alt="icon">
-                            <span class="font-italic">Creating HTML structure of the web page, inserting links, videos and pictures, working with HTML5 semantic elements, converting designs to HTML pages.</span>
-                        </div>
-                        <div class="col-sm-4 text-center py-2">
-                            <img src="img/icon/css3.png" class="m-auto pb-1 img logo" alt="icon">
-                            <span class="font-italic">Changing style, color and position of HTML elements, working with animations, working with flexbox and css grid, adapting aplications for different screens using media queries, BEM methodology.</span>
-                        </div>
-                        <div class="col-sm-4 text-center py-2">
-                            <img src="img/icon/js.png" class="m-auto pb-1 img logo" alt="icon">
-                            <span class="font-italic">Data types, variables, functions, loops, If/Else statements, arrays and array methods, operators, algorithms, manipulating with DOM, objects,concepts of asynchronous programming. I use ES6 features.</span>
-                        </div>
+            <section class="col-md-10 offset-md-1 col-sm-12 m-auto py-3" id="skill">
+                <h2 class="border-bottom border-primary coloring-text mb-5 text-center text-capitalize">Look what i can do</h2>
+                <div class="row pb-3">
+                    <div class="col-sm-4 py-2">
+                        <img src="img/icon/html5.png" class="m-auto pb-1 img logo" alt="icon">
+                        <span class="font-italic">Creating HTML structure of the web page, inserting links, videos and pictures, working with HTML5 semantic elements, converting designs to HTML pages.</span>
                     </div>
-                    <div class="row py-2">
-                        <div class="col-sm-4 text-center py-2">
-                            <img src="img/icon/jquery_logo.png" class="m-auto pb-1 img logo" alt="icon">
-                            <span class="font-italic">Manipulating with DOM, manipulating with CSS, working with events, effects and animations, AJAX.</span>
-                        </div>
-                        <div class="col-sm-4 text-center py-2">
-                            <img src="img/icon/json.png" class="m-auto pb-1 img logo" alt="icon">
-                            <span class="font-italic">Working,create and manipulating with JSON data.</span>
-                        </div>
-                        <div class="col-sm-4 text-center py-2">
-                            <img src="img/icon/bootstrap.png" class="m-auto pb-1 img logo" alt="icon">
-                            <span class="font-italic">Using bootstrap grid system, using bootstrap components and classes.</span>
-                        </div>
+                    <div class="col-sm-4 py-2">
+                        <img src="img/icon/css3.png" class="m-auto pb-1 img logo" alt="icon">
+                        <span class="font-italic">Changing style, color and position of HTML elements, working with animations, working with flexbox and css grid, adapting aplications for different screens using media queries, BEM methodology.</span>
                     </div>
-                    <div class="row py-2">
-                        <div class="col-sm-4 text-center py-2">
-                            <img src="img/icon/mysql.png" class="m-auto pb-1 img logo" alt="icon">
-                            <span class="font-italic">Working with MySQL database with Workbench. I plan, writing query, create, update/delete databases and tables, make join with multiple tables with foreign keys. Create procedure.</span>
-                        </div>
-                        <div class="col-sm-4 text-center py-2">
-                            <img src="img/icon/sass.png" class="m-auto pb-1 img logo" alt="icon">
-                            <span class="font-italic">Using scss syntax. Using variables and mixins, using nesting to target specific elements, structuring project in separate modules. Using npm for compile sass.</span>
-                        </div>
-                        <div class="col-sm-4 text-center py-2 nesto">
-                            <img src="img/icon/npm.png" class="m-auto pb-1 img logo" alt="icon">
-                            <span class="font-italic">Working with Git and using SourceTree for tracking code and work in team. Using NPM packages. Work in Express.js enviroment. I also use other JavaScript libraries such as EJS and DataTables. I have basic knowledge of PHP.</span>
-                        </div>
+                    <div class="col-sm-4 py-2">
+                        <img src="img/icon/js.png" class="m-auto pb-1 img logo" alt="icon">
+                        <span class="font-italic">Data types, variables, functions, loops, If/Else statements, arrays and array methods, operators, algorithms, manipulating with DOM, objects,concepts of asynchronous programming. I use ES6 features.</span>
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class="col-sm-4 py-2">
+                        <img src="img/icon/jquery_logo.png" class="m-auto pb-1 img logo" alt="icon">
+                        <span class="font-italic">Manipulating with DOM, manipulating with CSS, working with events, effects and animations, using AJAX to send/recive data from server.</span>
+                    </div>
+                    <div class="col-sm-4 py-2">
+                        <img src="img/icon/expressjs.png" class="m-auto pb-1 img logo" alt="icon">
+                        <span class="font-italic">Working with Express.js framework. Create routing, conection on databases, write middleware. Using Nodemon for tracking changes file and automatically restarting the node application.</span>
+                    </div>
+                    <div class="col-sm-4 py-2">
+                        <img src="img/icon/mysql.png" class="m-auto pb-1 img logo" alt="icon">
+                        <span class="font-italic">Working with MySQL database with Workbench. I plan, writing query, create, update/delete databases and tables, make join with multiple tables with foreign keys. Create procedure.</span>
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class="col-sm-4 py-2">
+                        <img src="img/icon/bootstrap.png" class="m-auto pb-1 img logo" alt="icon">
+                        <span class="font-italic">Using Bootstrap 4. I use grid system, bootstrap components and classes.</span>
+                    </div>
+                    <div class="col-sm-4 py-2">
+                        <img src="img/icon/sass.png" class="m-auto pb-1 img logo" alt="icon">
+                        <span class="font-italic">Using scss syntax. Using variables and mixins, using nesting to target specific elements, structuring project in separate modules. Using npm for compile sass.</span>
+                    </div>
+                    <div class="col-sm-4 py-2 nesto">
+                        <img src="img/icon/npm.png" class="m-auto pb-1 img logo" alt="icon">
+                        <span class="font-italic">Working with Git and using SourceTree for tracking code and work in team. Using NPM packages. Also using EJS. I have basic knowledge of PHP.</span>
                     </div>
                 </div>
             </section>
-            <section class="col-sm-10 offset-sm-1 py-4" id="exp">
-            	<div class="col">
-            		<h2 class="border-bottom border-primary coloring-text mb-2 text-center">Experience</h2>
-            		<p class="h5 font-weight-bold pb-2">Softmetrix (2018-present)</p>
-					<span>FrontEnd  internship - On internship I learned to work in the team, we developed desktop and mobile applications. Besides perfecting my skills such as JavaScript,Bootstrap,Mysql,Jquery and Express.js. I've mastered my personal skills such as team work, job delegation,responsibility. I improved access to tasks and troubleshooting.</span>
-            	</div>
-            </section>
-            <section class="col-sm-10 offset-sm-1 py-4" id="education">
-                <div class="">
-                    <h2 class="border-bottom border-primary coloring-text mb-4 text-center">Education</h2>
-                    <div class="col">
-                        <span class="font-italic mr-1">2017-2018</span>
-                        <p class="d-inline">IT Academy - Web Development</p>
-                    </div>
-                    <div class="col my-3 blur">
-                        <span class="font-italic mr-1">2010-2016</span>
-                        <p class="d-inline ">The academy of criminalistic and police studies, Zemun</p>
-                    </div>
-                    <div class="col m-3 ">
-                        <h4 class=" border-bottom border-primary my-4">Udemy online courses</h4>
-                        <ol class="font-italic">
-                            <li>
-                                <a href="https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/" rel="noopener" target="_blank" class="course-link text-dark"><span>Build responsive real world websites with HTML5 &amp; CSS3 - Jonas Schmedtmann</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.udemy.com/bootstrap-4-from-scratch-with-5-projects/" rel="noopener" target="_blank" class="course-link text-dark"><span>Bootstrap 4 - Brad Traversy</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.udemy.com/web-design-secrets/" rel="noopener" target="_blank" class="course-link text-dark"><span>Web design for web developers - Jonas Schmedtmann</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.udemy.com/front-end-web-development/" rel="noopener" target="_blank" class="course-link text-dark"><span>The Complete Front-End Web Development Course - Joseph Delgadillo</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.udemy.com/advanced-css-and-sass/" rel="noopener" target="_blank" class="course-link text-dark"><span>Advanced CSS and Sass - Jonas Schmedtmann</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.udemy.com/modern-javascript-from-the-beginning/" rel="noopener" target="_blank" class="course-link text-dark"><span>Modern JavaScript - Brad Traversy</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.udemy.com/the-complete-javascript-course/" rel="noopener" target="_blank" class="course-link text-dark"><span>The Complete Javascript course 2018 - Jonas Schmedtmann</span></a>
-                            </li>
-                        </ol>
-                    </div>
+            <section class="col-md-10 offset-md-1 col-sm-12 m-auto py-5" id="experience">
+                <div class="col">
+                    <h2 class="border-bottom border-primary coloring-text mb-2 text-center">Experience</h2>
+                    <p class="h5 font-weight-bold py-3">Softmetrix (2018-present)</p>
+                    <span>FrontEnd  internship - On internship I learned to work in the team, we developed desktop and mobile applications. Besides perfecting my skills such as JavaScript,Bootstrap and CSS3 also improve my knowledge from Mysql,Jquery and Express.js. I've mastered my personal skills such as team work, job delegation,responsibility. I improved access to tasks and troubleshooting.</span>
                 </div>
             </section>
-            <section class="col-sm-10 offset-sm-1 mb-4" id="projects">
+            <section class="col-md-10 offset-md-1 col-sm-12 m-auto py-4" id="projects">
                 <h2 class="border-bottom border-primary coloring-text text-center mb-4">Check out some of my projects</h2>
                 <div class="col-sm-12 row">
-                    <div class="project-window col" data-aos="fade-down-right">
-                        <a href="https://bogdanmaximovic.github.io/Natours/" rel="noopener" target="_blank"><img src="img/bkg/natours.png" alt="project-icon" class="project-img"><span class="project-text coloring-text">Natours website made using Scss.</span></a>
+                    <div class="project-window col" data-aos="fade-up">
+                        <a href="https://bogdanmaximovic.github.io/Natours/" rel="noopener" target="_blank"><img src="img/bkg/natours.png" alt="project-icon" class="project-img"><span class="project-text coloring-text">Natours website - Built With HTML5 CSS3 Sass</span></a>
                     </div>
-                    <div class="project-window col" data-aos="fade-down-left">
-                        <a href="https://bogdanmaximovic.github.io/Bugdet-App/" rel="noopener" target="_blank"><img src="img/bkg/budget.png" alt="project-icon" class="project-img"><span class="project-text coloring-text">Calculating the budget app</span></a>
-                    </div>
-                </div>
-                <div class="col-sm-12 row">
-                    <div class="project-window col" data-aos="flip-right">
-                        <a href="https://github.com/BogdanMaximovic/WeatherApp" rel="noopener" target="_blank"><img src="img/bkg/weather.png" alt="project-icon" class="project-img"><span class="project-text coloring-text">Weather App</span></a>
-                    </div>
-                    <div class="project-window col" data-aos="flip-left">
-                        <a href="https://bogdanmaximovic.github.io/omnifood/" rel="noopener" target="_blank" class="project-text coloring-text"><img src="img/bkg/omnifood.png" alt="project-icon" class="project-img"><span>Omnifood</span></a>
+                    <div class="project-window col" data-aos="fade-up">
+                        <a href="https://bogdanmaximovic.github.io/Bugdet-App/" rel="noopener" target="_blank"><img src="img/bkg/budget.png" alt="project-icon" class="project-img"><span class="project-text coloring-text">Calculating the budget app - Built With HTML5 CSS3 JavaScript</span></a>
                     </div>
                 </div>
                 <div class="col-sm-12 row">
-                    <div class="project-window col" data-aos="fade-up-right">
-                        <a href="https://bogdanmaximovic.github.io/Css-Animation/" rel="noopener" target="_blank"><img src="img/bkg/cssani.png" alt="project-icon" class="project-img"><span class="project-text coloring-text">Working with css animation</span></a>
+                    <div class="project-window col" data-aos="fade-upflip-left">
+                        <a href="https://bogdanmaximovic.github.io/Trillo-app/" rel="noopener" target="_blank"><img src="img/bkg/trillo.png" alt="project-icon" class="project-img"><span class="project-text coloring-text">Trillo website - Build with HTML5, CSS3, SASS preprocessor, Flexbox layout, npm pacages and BEM Methodology</span></a>
                     </div>
-                    <div class="project-window col" data-aos="fade-up-left">
-                        <a href="https://bogdanmaximovic.github.io/Trillo-app/" rel="noopener" target="_blank"><img src="img/bkg/trillo.png" alt="project-icon" class="project-img"><span class="project-text coloring-text">Trillo website made using flexbox</span></a>
+                    <div class="project-window col" data-aos="fade-upflip-left">
+                        <a href="https://bogdanmaximovic.github.io/omnifood/" rel="noopener" target="_blank" class="project-text coloring-text"><img src="img/bkg/omnifood.png" alt="project-icon" class="project-img"><span>Omnifood website - Built With HTML5 CSS3 JS</span></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 row">
+                    <div class="project-window col" data-aos="fade-up">
+                        <a href="https://bogdanmaximovic.github.io/Css-Animation/" rel="noopener" target="_blank"><img src="img/bkg/cssani.png" alt="project-icon" class="project-img"><span class="project-text coloring-text">Working with css animation - Build with HTML5, CSS3, Jquery.</span></a>
+                    </div>
+                    <div class="project-window col" data-aos="fade-up">
+                        <a href="https://github.com/BogdanMaximovic/WeatherApp" rel="noopener" target="_blank"><img src="img/bkg/weather.png" alt="project-icon" class="project-img"><span class="project-text coloring-text">WeatherApp - Build with JavaScript, Bootstrap and weather API for another site</span></a>
                     </div>
                 </div>
             </section>
-            <section class="col-sm-10 offset-sm-1" id="contact">
+            <section class="col-md-10 offset-md-1 col-sm-12 m-auto" id="contact">
                 <h2 class="border-bottom border-primary coloring-text text-center">This is how you can contact me</h2>
                 <div class="row">
                     <div class="col-sm-12 text-center">
                         <span class="pr-3">
-                            <a href="https://www.linkedin.com/in/bogdan-maksimovi%C4%87-0211ab173/" rel="noopener" target="_blank" class="text-dark">
-                                <svg class="info-icon-in">
-                                    <use xlink:href="css/svg/sprite.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </span>
+                    <a href="https://www.linkedin.com/in/bogdan-maksimovi%C4%87-0211ab173/" rel="noopener" target="_blank" class="text-dark">
+                        <svg class="info-icon-in">
+                            <use xlink:href="css/svg/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </span>
                         <span class="pr-3">
-                            <a href="https://github.com/BogdanMaximovic" rel="noopener" target="_blank" class="text-dark">
-                                <svg class="info-icon-gh">
-                                    <use xlink:href="css/svg/sprite.svg#icon-github"></use>
-                                </svg>
-                            </a>
-                        </span>
+                    <a href="https://github.com/BogdanMaximovic" rel="noopener" target="_blank" class="text-dark">
+                        <svg class="info-icon-gh">
+                            <use xlink:href="css/svg/sprite.svg#icon-github"></use>
+                        </svg>
+                    </a>
+                </span>
                         <span class="">
-                            <a href="https://www.facebook.com/bogdan.maksimovic.15" rel="noopener" target="_blank" class="text-dark">
-                                <svg class="info-icon-fb">
-                                    <use xlink:href="css/svg/sprite.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </span>    
+                    <a href="https://www.facebook.com/bogdan.maksimovic.15" rel="noopener" target="_blank" class="text-dark">
+                        <svg class="info-icon-fb">
+                            <use xlink:href="css/svg/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </span>
                     </div>
                 </div>
             </section>

@@ -14,3 +14,7 @@ Single-colored icons can be modified like so:
   color: red;
 }
 ========================================== */
+
+.icon-library {
+  width: 1.0625em;
+}
