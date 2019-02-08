@@ -262,7 +262,7 @@ main {
         font-size: 10px;
     }
 }
-
+#call:hover,
 span>a:hover,
 span>a:active {
     text-decoration: none;
