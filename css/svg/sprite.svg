@@ -1,5 +1,9 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-download" viewBox="0 0 20 20">
+<title>download</title>
+<path d="M13 8v-6h-6v6h-5l8 8 8-8h-5zM0 18h20v2h-20v-2z"></path>
+</symbol>
 <symbol id="icon-home3" viewBox="0 0 32 32">
 <title>home3</title>
 <path d="M32 19l-6-6v-9h-4v5l-6-6-16 16v1h4v10h10v-6h4v6h10v-10h4z"></path>

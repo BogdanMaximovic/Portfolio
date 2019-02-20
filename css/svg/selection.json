@@ -4,6 +4,30 @@
     {
       "icon": {
         "paths": [
+          "M665.6 409.6v-307.2h-307.2v307.2h-256l409.6 409.6 409.6-409.6h-256zM0 921.6h1024v102.4h-1024v-102.4z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "download"
+        ],
+        "grid": 20
+      },
+      "attrs": [],
+      "properties": {
+        "id": 109,
+        "order": 17,
+        "prevSize": 20,
+        "name": "download"
+      },
+      "setIdx": 0,
+      "setId": 3,
+      "iconIdx": 108
+    },
+    {
+      "icon": {
+        "paths": [
           "M1024 608l-192-192v-288h-128v160l-192-192-512 512v32h128v320h320v-192h128v192h320v-320h128z"
         ],
         "tags": [

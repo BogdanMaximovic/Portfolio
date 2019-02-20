@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Author: Bogdan Maksimovic, 
+    <meta name="Description" content="Author: Bogdan Maksimovic, bogdanmaksimovic
     Portfolio, Junior Frontend Web Developer">
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/logo/apple-touch-icon.png">
@@ -49,22 +49,16 @@
             </div>
         </nav>
         <main class="row">
-            <section class="col-sm-12 m-auto pt-1" id="about">
+            <section class="col-sm-12 m-auto pt-2" id="about">
                 <div class="text-center animated mx-5">
                     <h1 class="coloring-text pb-3">Bogdan Maksimović</h1>
                     <h3 class="coloring-text pb-3">Frontend Web Developer</h3>
                     <img src="img/author/me.jpeg" class="border border-primary author img" alt="author">
-                    <span class="font-italic mt-3 text-left" id="information">Hi, my name is Bogdan, and I'm <span class="coloring-text"> Frontend web developer.</span> Every day, I'm looking for ways to improve my knowledge in order to write a clean and sustainable code. My motto is: Choose the job you love, and you will not have to work even the only day in your life. I am motivated, I want to learn and improve my knowledge as well as to apply the existing ones that I have gained so far at the IT academy and self-study through Udemy online courses. My next goals are master Javascript ES6 and ReactJS.</span>
+                    <span class="font-italic mt-3 text-left" id="information">Hi, my name is Bogdan, and I'm <span class="coloring-text"> Frontend web developer.</span> Every day, I'm looking for ways to improve my knowledge in order to write a clean and sustainable code. My motto is: Choose the job you love, and you will not have to work even the only day in your life. I am motivated, I want to learn and improve my knowledge as well as to apply the existing ones that I have gained so far at the IT academy and self-study through Udemy online courses. My next goals are master ReactJS.</span>
                 </div>
             </section>
             <section class="col-md-10 offset-md-1 col-sm-12 m-auto py-3" id="info">
                 <h2 class="border-bottom border-primary coloring-text text-center">Information</h2>
-                <div class="col pt-3">
-                    <svg class="info-icon info-icon-male">
-                        <use xlink:href="css/svg/sprite.svg#icon-man"></use>
-                    </svg>
-                    <span class="h5">Bogdan Maksimović</span>
-                </div>
                 <div class="col">
                     <svg class="info-icon info-icon-home">
                         <use xlink:href="css/svg/sprite.svg#icon-home3"></use>
@@ -84,6 +78,12 @@
                     <span class="h5">
                         <a href="mailto:bogdanmaksimovic91@gmail.com" class="text-dark">bogdanmaksimovic91@gmail.com</a>
                     </span>
+                </div>
+                <div class="col" onclick="download()">
+                    <svg class="info-icon info-icon-download">
+                        <use xlink:href="css/svg/sprite.svg#icon-download"></use>
+                    </svg>
+                    <span class="h5" id="download">Download CV</span>
                 </div>
                 <div class="col" id="phone">
                     <svg class="info-icon info-icon-phone">
