@@ -273,24 +273,31 @@ main {
 }
 
 .author {
-    border-radius: 50%;
-    width: 15rem;
-    height: 15rem;
+    /*border-radius: 5px;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1.5rem;*/
+        border-radius: 20px;
+    width: 9rem;
+    height: 11.5rem;
     margin-right: 1.5rem;
 }
 
 #information {
     font-size: 20px;
+    display: block;
+    padding-top: 15px;
 }
 
 @media only screen and (max-width: 37.5em) {
     .author {
-        width: 8.5rem;
-        height: 8.5rem;
+        width: 5.5rem;
+        height: 6.5rem;
     }
 
     #information {
-        font-size: 10px;
+        font-size: 100%;
+        padding-top: 0;
     }
 }
 
@@ -342,10 +349,10 @@ span>a:active {
 }
 
 #phone:hover .info-icon-phone {
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    transform: scale(1.5);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 [data-target="#phoneNumber"] {
@@ -391,7 +398,9 @@ span>a:active {
     color: transparent;
     letter-spacing: 1.5px;
 }
-
+.coloring-text:hover {
+    text-decoration: none !important;
+}
 .project-window {
     margin: 2rem 1rem;
     position: relative;
@@ -411,19 +420,21 @@ span>a:active {
 }
 
 .img {
-    -webkit-clip-path: circle(50% at 50% 50%);
+    /*-webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);*/
     float: left;
 }
 
 .project-img:hover {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
 }
-
+.project-window:hover{
+    text-decoration: none;
+}
 svg {
     -webkit-transition: -webkit-transform .2s ease;
     transition: -webkit-transform .2s ease;
