@@ -23,6 +23,6 @@ $(document).ready(function() {
 function download(){  
 	let link = document.createElement('a')
     link.download = "Bogdan Maksimović CV";
-    link.href = "Bogdan Maksimović.pdf";
+    link.href = "Bogdan Maksimović CV.pdf";
     link.click();
 }
